@@ -20,3 +20,5 @@ class IteraBinarySearch{
 
 const data  = new IteraBinarySearch()
 console.log( "Got: ", data.search( 7, [2, 3, 6, 7, 8, 0] ) )
+
+
