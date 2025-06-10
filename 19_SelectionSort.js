@@ -4,11 +4,13 @@ class SelectionSort{
             let min = i
             for( let j = i+1; j < arr.length; j++ ){
                 if( arr[j] < arr[min] ){
-                    let temp = arr[j]
-                    arr[j] = arr[min]
-                    arr[min] = temp
+                    min = j
                 }
+
             }
+            let temp = arr[i]
+            arr[i] = arr[min]
+            arr[min] = temp
         }
         return arr
     }
